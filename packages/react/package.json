@@ -1,0 +1,40 @@
+{
+  "name": "react-dnd-panels",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format=esm,cjs --dts"
+  },
+  "peerDependencies": {
+    "@types/node": ">= 12",
+    "@types/react": ">= 16",
+    "react": ">= 16.14"
+  },
+  "peerDependenciesMeta": {
+    "@types/node": {
+      "optional": true
+    },
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "dnd-panels-core": "*",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.6.3",
+    "@types/react": "18.0.15",
+    "react": "18.2.0",
+    "tsconfig": "*",
+    "tsup": "^6.2.1",
+    "typescript": "^4.5.2"
+  }
+}
